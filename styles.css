@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+* {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body {
+    background-color: #2c7575;
+    font-family: 'Nuosu SIL';
+}
+
+#box {
+    border: 3px solid #0e4747;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10%;
+    overflow: hidden;
+    background-color: #0e4747;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 0px 0px #061f1f;
+}
+
+#sec_box {
+    border: 3px solid #0e4747;
+    box-shadow: 0 1.5px 0 0 #061f1f;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #0e4747;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    cursor:default;
+}
+
+h1 {
+    padding-top: 10px;
+    text-align: center;
+    cursor: default;
+}
+
+p {
+    color: white;
+    padding: 0 10px;
+}
+
+#pic {
+    max-width: 100px;
+    max-width: 100px;
+    float: right;
+}
+
+ul li {
+    list-style: none;
+}
+
+#fb, #gh, #gm, #mess {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 5px;
+}
+
+.container {
+    margin-top: 100px;
+    text-align: center; 
+}
+
+a {
+    text-decoration: none;
+}
+
+#fb:hover {
+    transform: scale(1.5);
+}
+
+#gh:hover {
+    transform: scale(1.5);
+}
+
+#gm:hover {
+    transform: scale(1.5);
+}
+
+#mess:hover {
+    transform: scale(1.5);
+}
+
+#pic:hover {
+    transform: scale(10);
+}
+@media screen and (max-width: 500px) {
+    #fb, #gh, #gm, #mess{
+      width: 100%;
+    }
+}
