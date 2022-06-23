@@ -1,101 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 
 * {
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: #2c7575;
-    font-family: 'Nuosu SIL';
+    font-family: 'Manrope';
+    color: black;
 }
 
-#box {
-    border: 3px solid #0e4747;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 10%;
-    overflow: hidden;
-    background-color: #0e4747;
-    border-radius: 10px;
-    box-shadow: 1.5px 1.5px 0px 0px #061f1f;
-}
-
-#sec_box {
-    border: 3px solid #0e4747;
-    box-shadow: 0 1.5px 0 0 #061f1f;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 10px;
-    background-color: #0e4747;
-}
-
-h2 {
-    margin: 0 auto;
-    text-align: center;
-    cursor:default;
-}
-
-h1 {
-    padding-top: 10px;
-    text-align: center;
-    cursor: default;
-}
-
-p {
-    color: white;
-    padding: 0 10px;
-}
-
-#pic {
-    max-width: 100px;
-    max-width: 100px;
-    float: right;
+#navbar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    background-color: rgb(214, 37, 37);
+    text-align: right;
 }
 
 ul li {
-    list-style: none;
+    display: inline-block;
+    justify-content: right;
+    padding-right: 25px;
+    color: white;
+    font-weight: bold;
+    margin:20px 0 20px 0;
 }
 
-#fb, #gh, #gm, #mess {
-    max-width: 50px;
-    max-height: 50px;
-    padding: 5px;
+ul a:hover {
+    position: relative;
+    top: 5px;
 }
 
-.container {
-    margin-top: 100px;
-    text-align: center; 
+#sec1 {
+    top: 60px;
+    width: 100%;
+    height: 649px;
+    background-color: #1B1B1B;
 }
 
-a {
-    text-decoration: none;
+#sec1 h1 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: white;
+    font-size: 4vw;
 }
 
-#fb:hover {
-    transform: scale(1.5);
+#sec1 h2 {
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    color: white;
+    font-size: 3vw;
+    font-style:italic;
 }
 
-#gh:hover {
-    transform: scale(1.5);
+#sec2 {
+    top: 60px;
+    width: 100%;
+    height: 710px;
+    background-color: #2c3539;
 }
 
-#gm:hover {
-    transform: scale(1.5);
+#sec2 img {
+    width: 60%;
+    height: auto;
+    padding: 70px 10px 0 10px;
 }
 
-#mess:hover {
-    transform: scale(1.5);
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#pic:hover {
-    transform: scale(10);
+#sec3 {
+    width: 100%;
+    height: 20%;
+    background-color: #3B3131;
 }
-@media screen and (max-width: 500px) {
-    #fb, #gh, #gm, #mess{
-      width: 100%;
+
+#sec3 h1 {
+    position: absolute;
+    top: 235%;
+    left: 15%;
+    color: white;
+    font-size: 4vw;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#sec3 img {
+    width: 80px;
+    height: auto;
+}
+
+#sec3 img:hover {
+    transform: scale(1.2);
+}
+
+hr {
+    width: 100%;
+}
+
+footer {
+    text-align: right;
+    margin: 30px 50px 30px 0;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (max-width:480px) {
+    #sec1 h1 {
+        left: 20%;
+        font-size: 6vw;
+    }
+    #sec1 h2 {
+        left: 28%;
+        font-size: 5vw;
+    }
+    #sec2 img {
+        width: 100%;
+    }
+    #sec3 img {
+        width: 40px;
+        height: auto;
+        margin-top: 14%;
     }
 }
