@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Manrope';
-    color: black;
 }
 
 #navbar {
@@ -15,7 +14,6 @@ body {
     height: 60px;
     position: fixed;
     z-index: 2;
-    background-color: rgb(214, 37, 37);
     text-align: right;
 }
 
@@ -37,7 +35,7 @@ ul a:hover {
     top: 60px;
     width: 100%;
     height: 649px;
-    background-color: #1B1B1B;
+    background-image: linear-gradient(to right bottom,#8929AD, #436AAC, #43B7B8);
 }
 
 #sec1 h1 {
@@ -61,13 +59,13 @@ ul a:hover {
     top: 60px;
     width: 100%;
     height: 710px;
-    background-color: #2c3539;
+    background-image: linear-gradient(to right bottom,#8929AD, #436AAC, #43B7B8);
 }
 
 #sec2 img {
-    width: 60%;
-    height: auto;
-    padding: 70px 10px 0 10px;
+    max-width: 60%;
+    max-height: 70%;
+    padding: 70px 10px 70px 10px;
 }
 
 #container {
@@ -79,7 +77,7 @@ ul a:hover {
 #sec3 {
     width: 100%;
     height: 20%;
-    background-color: #3B3131;
+    background-image: linear-gradient(to right top,#8929AD, #436AAC, #43B7B8);
 }
 
 #sec3 h1 {
@@ -107,6 +105,47 @@ ul a:hover {
     transform: scale(1.2);
 }
 
+#secpro {
+    top: 60px;
+    width: 100%;
+    height: 710px;
+    background-image: linear-gradient(to right top,#8929AD, #436AAC, #43B7B8);
+}
+
+#compiler {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#proj {
+    max-width: 250px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 70px 10px 70px 10px;
+    color: white;
+}
+
+#proj h2, p {
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+}
+
+#proj img {
+    max-width: 100%;
+    height: 65%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+#proj a {
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width:480px) {
     #sec1 h1 {
         left: 20%;
@@ -117,11 +156,28 @@ ul a:hover {
         font-size: 5vw;
     }
     #sec2 img {
-        width: 100%;
+        max-width: 100%;
     }
     #sec3 img {
         width: 40px;
         height: auto;
         margin-top: 14%;
+    }
+    #navbar {
+        position: absolute;
+    }
+}
+
+@media (max-width:810px) {
+    #proj {
+        max-width: 190px;
+        height: 300px;
+        margin: 30px 0 0 0;
+    }
+}
+
+@media (max-width:389px) {
+    #secpro {
+        height: 1000px;
     }
 }
