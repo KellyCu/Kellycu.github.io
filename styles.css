@@ -35,7 +35,7 @@ ul a:hover {
     top: 60px;
     width: 100%;
     height: 649px;
-    background-image: linear-gradient(to right bottom,#8929AD, #436AAC, #43B7B8);
+    background-image: linear-gradient(to right bottom,#574BCD, #2999AD, #49E975);
 }
 
 #sec1 h1 {
@@ -59,7 +59,7 @@ ul a:hover {
     top: 60px;
     width: 100%;
     height: 710px;
-    background-image: linear-gradient(to right bottom,#8929AD, #436AAC, #43B7B8);
+    background-image: linear-gradient(to right bottom,#574BCD, #2999AD, #49E975);
 }
 
 #sec2 img {
@@ -77,7 +77,7 @@ ul a:hover {
 #sec3 {
     width: 100%;
     height: 20%;
-    background-image: linear-gradient(to right top,#8929AD, #436AAC, #43B7B8);
+    background-image: linear-gradient(to right top,#574BCD, #2999AD, #49E975);
 }
 
 #sec3 h1 {
@@ -109,7 +109,7 @@ ul a:hover {
     top: 60px;
     width: 100%;
     height: 710px;
-    background-image: linear-gradient(to right top,#8929AD, #436AAC, #43B7B8);
+    background-image: linear-gradient(to right top,#574BCD, #2999AD, #49E975);
 }
 
 #compiler {
