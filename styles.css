@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -108,7 +109,7 @@ ul a:hover {
 #secpro {
     top: 60px;
     width: 100%;
-    height: 710px;
+    height: auto;
     background-image: linear-gradient(to right top,#574BCD, #2999AD, #49E975);
 }
 
@@ -116,29 +117,29 @@ ul a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 #proj {
-    max-width: 350px;
-    height: 340px;
-    border: 2px solid white;
-    border-radius: 10px;
-    margin: 70px 10px 70px 10px;
-    color: white;
-}
-
-#proj h2, p {
-    padding: 10px 10px 0px 10px;
+    width: 25vw;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 20px;
     text-align: center;
+    margin: 0 2vw 2vw 0;
 }
 
 #proj img {
-    max-width: 100%;
-    height: 65%;
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px;
+    width: 100%;
+    height: 15vw;
+    border-radius: 20px 20px 0 0;
+}
+
+#proj h2 {
+    position: relative;
+    top: -1vw;
+    font-size: 2.5vw;
 }
 
 #proj a {
@@ -168,16 +169,24 @@ ul a:hover {
     }
 }
 
-@media (max-width:810px) {
-    #proj {
-        max-width: 190px;
-        height: 300px;
-        margin: 30px 0 0 0;
-    }
-}
 
-@media (max-width:389px) {
-    #secpro {
-        height: 1000px;
+@media (max-width:425px) {
+    #proj {
+        width: 80%;
+        height: 50vw;
+        border-radius: 20px;
+        text-align: center;
+        margin: 0 2vw 5vw 0;
+    }
+    
+    #proj img {
+        width: 100%;
+        height: 80%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #proj h2 {
+        font-size: 7vw;
+        top: -3vw;
     }
 }
