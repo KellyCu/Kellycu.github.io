@@ -46,10 +46,9 @@ var try_bank = [
 var rnum2 = (Math.ceil(Math.random() * try_bank.length)-1);
 var again = try_bank[rnum2];
 
-function clear() {
+function disp() {
     document.getElementById("again").style.display="none";
 }
-
 
 
 var place_bank = [
@@ -96,11 +95,14 @@ var correct_word = place[random];
             console.log(guess);
             document.getElementById('again').style.display="block";
         }
-    }
+    }  
 
-    function reload() {
-        location.reload();
-    }
+function reload() {
+    location.reload();
+}
+
+
+
 
     // MEDIUM 
 
@@ -536,3 +538,177 @@ document.addEventListener("keyup", function(event) {
         player.style.right="-10px";
     }
 });
+
+
+// CALCULATOR ------------------------------------------------------------------------------------------------------------
+
+var fnum;
+var ope;
+var snum;
+var ans;
+var disp;
+var ongoing;
+var dp;
+
+
+function Add(){
+    fnum = document.getElementById('compt').value;
+    ope = '+';
+    disp = document.getElementById('compt');
+    disp.value = '';
+    dp = document.getElementById('sym');
+    dp.innerHTML = '+';
+}
+
+function Sub(){
+    fnum = document.getElementById('compt').value;
+    ope = '-';
+    disp = document.getElementById('compt');
+    disp.value = '';
+    dp = document.getElementById('sym');
+    dp.innerHTML = '-';
+}
+
+function Mul(){
+     fnum = document.getElementById('compt').value;
+     ope = '*';
+    disp = document.getElementById('compt');
+    disp.value = '';
+    dp = document.getElementById('sym');
+    dp.innerHTML = '×';
+}
+
+function Div(){
+    fnum = document.getElementById('compt').value;
+    ope = '/';
+    disp = document.getElementById('compt');
+    disp.value = '';
+    dp = document.getElementById('sym');
+    dp.innerHTML = '÷';
+}
+
+function Clr(){
+    disp = document.getElementById('compt');
+    disp.value = '';
+    fnum = null;
+    snum = null;
+    dp = document.getElementById('sym');
+    dp.innerHTML = '';
+}
+
+function Sqrt(){
+    fnum = document.getElementById('compt').value;
+    ope = "!";
+    dp = document.getElementById('sym');
+    dp.innerHTML = '√';
+    ans = Math.sqrt(parseInt(fnum));
+    disp = document.getElementById('compt');
+    disp.value = ans;
+
+}
+
+function Equals(){
+    snum = document.getElementById('compt').value;
+    var num1 = parseInt(fnum);
+    var num2 = parseInt(snum);
+    switch(ope){
+        case '+':
+            ans = num1 + num2;
+            disp = document.getElementById('compt');
+            disp.value = ans;
+            break;
+        case '-':
+            snum = document.getElementById('compt').value;
+            ans = num1 - num2;
+            disp = document.getElementById('compt');
+            disp.value = ans;
+            break;
+        case '*':
+            snum = document.getElementById('compt').value;
+            ans = num1 * num2;
+            disp = document.getElementById('compt');
+            disp.value = ans;
+            break;
+        case '/':
+            snum = document.getElementById('compt').value;
+            ans = num1 / num2;
+            disp = document.getElementById('compt');
+            disp.value = ans;
+            break;
+        case '!':
+            ans = Math.sqrt(num1);
+            disp = document.getElementById('compt');
+            disp.value = ans;
+            break;
+    }
+    dp = document.getElementById('sym');
+    dp.innerHTML = '';
+}
+
+function one(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 1;
+}
+
+function two(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 2;
+}
+
+function three(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 3;
+}
+
+function four(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 4;
+}
+
+function five(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 5;
+}
+
+function six(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 6;
+}
+
+function seven(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 7;
+}
+
+function eight(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 8;
+}
+
+function nine(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 9;
+}
+
+function zero(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing + 0;
+}
+
+function Del(){
+    ongoing = document.getElementById('compt').value;
+    disp = document.getElementById('compt');
+    disp.value = ongoing.slice(0, -1);
+}
+
+
