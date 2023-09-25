@@ -1,0 +1,34 @@
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #131313;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icons i {
+    font-size: 7vw;
+    padding: 1.5vw;
+}
+
+#icons a {
+    color: white;
+}
+
+#icons a:hover {
+    color: #00cccc;
+    transform: scale(1.08);
+    transition: 500ms;
+}
+
+@media (max-width:425px) {
+    #icons i {
+        font-size: 9vw;
+    }
+}

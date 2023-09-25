@@ -1,0 +1,42 @@
+
+
+#certificate {
+    width: 100%;
+    height: auto;
+    background-color: #1b1b1b;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vw 0 2vw 0;
+}
+
+#container img {
+    width: 40%;
+    height: auto;
+    margin: 2vw 2vw 0 0;
+}
+
+
+
+@media (max-width:425px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #container img {
+        width: 80%;
+        height: auto;
+        margin: 5vw 0 0 0 ;
+    }
+
+    #certificate h1 {
+        font-size: 6vw;
+    }
+}
