@@ -3,10 +3,10 @@ const Sec3 = () => {
         <section id="certificate">
             <h1 id="proj">Certificates</h1>
             <div id="container">
-                <img src="/img/cert1.png"/>
-                <img src="/img/JavaCertificate.png"/>
-                <img src="/img/SQLCertificate.png"/>
-                <img src="/img/BackEndCertificate.png"/>
+                <img src="https://github.com/KellyCu/Kellycu.github.io/blob/main/img/cert1.png?raw=true"/>
+                <img src="https://github.com/KellyCu/Kellycu.github.io/blob/main/img/JavaCertificate.png?raw=true"/>
+                <img src="https://github.com/KellyCu/Kellycu.github.io/blob/main/img/SQLCertificate.png?raw=true"/>
+                <img src="https://github.com/KellyCu/Kellycu.github.io/blob/main/img/BackEndCertificate.png?raw=true"/>
             </div>
         </section>
     )
