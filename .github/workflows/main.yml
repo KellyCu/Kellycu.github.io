@@ -1,0 +1,28 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: |
+        npm install  # Or use the appropriate command for your project
+        npm run build  # Or use the appropriate build command
+
+    - name: Deploy to GitHub Pages
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@users.noreply.github.com"
+        git checkout gh-pages  # Create or switch to the gh-pages branch
+        git add . --force
+        git commit -m "Deploy from GitHub Actions"
+        git push origin gh-pages --force
