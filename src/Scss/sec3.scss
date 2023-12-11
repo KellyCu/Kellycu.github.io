@@ -1,0 +1,84 @@
+// #4A55A2
+// #7895CB
+// #A0BFE0
+// #C5DFF8
+
+
+#projects {
+    width: auto;
+    height: 100vh;
+    background-color:#4A55A2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2vw 0 2vw 0;
+    
+    #cap2 {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.6vw;
+        font-family: 'Inter';
+        color: #C5DFF8;
+        text-shadow: -2px 9px 9px rgba(0,0,0,0.38);
+    }
+    #projCon {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        #proj {
+            width: 25vw;
+            height: 40vh;
+            background-color: white;
+            border-radius: 1vw;
+            margin: 0 0 0 1.5vw;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+                border-radius: 1vw;
+                box-shadow: 0 10px 10px -0.6vw black;
+            }
+        }
+        .sev {
+            img {
+                object-fit: contain;
+            }
+        }
+    
+        #proj:hover {
+            transform: scale(1.1);
+            transition: 0.7s ease-in-out
+        }
+    }
+    
+
+    
+}
+
+@media (max-width: 425px) {
+    #projects {
+        padding: 0;
+        #cap2 {
+            font-size: 4vh;
+        }
+        #projCon {
+            height: 50%;
+            #proj {
+                min-width: 30vw;
+                height: 20vh;
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
